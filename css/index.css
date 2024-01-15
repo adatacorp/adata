@@ -1,0 +1,92 @@
+#home-company-name {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 3s steps(14, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+.skill-icon {
+    width: 10%
+}
+
+.skills { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.works-section {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.animateSlider {
+        background-color: #4a4a4a;
+        animation: sliderWork 2s;
+        width: 72%;
+        height: 422px;
+        position: absolute;
+        top: -6%;
+        left: 57%;
+        border: 2px solid;
+        border-radius: 36px;
+        padding: 8px;
+}
+
+@keyframes sliderWork {
+    from {
+        width: 0%;
+    } to {
+        width: 50;
+    }   
+}
+
+#work-title {
+  font-size: 40px;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  height: 30px;
+}
+
+.des {
+    color: #000;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+#list-des {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+}
